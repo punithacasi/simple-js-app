@@ -1,36 +1,36 @@
- :root {
-     --body-font-weight: 400;
-     --body-font-style: normal;
+:root {
+    --body-font-weight: 400;
+    --body-font-style: normal;
 
-     --h1-Color: #686ad7;
-     --h-font-weight: 700;
-     --h1-font-size: 22px;
+    --h1-Color: #686ad7;
+    --h-font-weight: 700;
+    --h1-font-size: 22px;
 
-     --header-background-color: #EF5350;
-
-
- }
+    --header-background-color: #EF5350;
 
 
- body {
-     font-family: "Playwrite ES Deco", cursive;
-     font-optical-sizing: auto;
-     font-weight: var(--body-font-weight);
-     font-style: var(--body-font-style);
-     line-height: 1.6;
+}
 
- }
 
- h1 {
-     font-size: var(--h1-font-size);
-     font-weight: var(--h-font-weight);
-     color: var(--h1-Color);
- }
+body {
+    font-family: "Playwrite ES Deco", cursive;
+    font-optical-sizing: auto;
+    font-weight: var(--body-font-weight);
+    font-style: var(--body-font-style);
+    line-height: 1.6;
 
- header {
-     background-color: var(--header-background-color);
- }
+}
 
- .navigation__logo img {
-     height: 50px;
- }
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: var(--h-font-weight);
+    color: var(--h1-Color);
+}
+
+header {
+    background-color: var(--header-background-color);
+}
+
+.navigation__logo img {
+    height: 50px;
+}
