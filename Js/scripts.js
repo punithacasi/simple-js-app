@@ -13,14 +13,20 @@
   
   //“Bulbasaur (height: 7)”.
   //Wow, that’s big!
-  for (i = 0; i < pokemonList.length; i++) {
-    let myText = pokemonList[i].name + " (height:" + pokemonList[i].height + ")";
-    if (pokemonList[i].height > 5) {
-      myText += " Wow, that’s big!";
-    }
-    myText += "<br>";
-    document.write(myText);
-  
+
+
+//ForEach
+pokemonList.forEach(function(item){
+  let myText = item.name + " (height:" + item.height + ")";
+  if (item.height > 5) {
+    myText += " Wow, that’s big!";
   }
+  myText += "<br>";
+  document.write(myText);
+
+
+});
+
+
   
   
