@@ -1,10 +1,4 @@
-//This array contains Pokémon data to display in your application.
-
-/* name - make this a string 
-   height - this will be a number 
-   types - make this an array of strings */
-
-  
+// pokemonRepository
 let pokemonRepository = (function () {
   let pokemonList = [];
 
@@ -15,12 +9,40 @@ let pokemonRepository = (function () {
   function getAll() {
     return pokemonList;
   }
+  // function to display Pokemon name in console
+  function showDetails(pokemon) {
+    console.log(pokemon.name);
+  }
+
+  // function to add click event (addEventListener) 
+  function addEventListener(element, pokemon) {
+    element.addEventListener('click', function () {
+      showDetails(pokemon);
+    });
+
+  }
+  // function to new pokemon button
+  function addListItem(pokemon) {
+    let elementContainer = document.querySelector(".pokemon-list");
+    let elementList = document.createElement('li');
+    let elementbutton = document.createElement('button');
+    elementbutton.classList = 'button-class';
+    addEventListener(elementbutton, pokemon);
+    elementbutton.innerText = pokemon.name;
+    elementList.appendChild(elementbutton);
+    elementContainer.appendChild(elementList);
+  }
 
   return {
     add: add,
-    getAll: getAll
+    getAll: getAll,
+    addListItem: addListItem
+
   };
 })();
+
+
+
 
 pokemonRepository.add({ name: 'Bulbasaur', height: 7, types: ['grass', 'poison'] });
 pokemonRepository.add({ name: 'Ivysaur', height: 1, types: ['grass', 'poison'] });
@@ -28,13 +50,7 @@ pokemonRepository.add({ name: 'Venusaur', height: 2, types: ['grass', 'poison'] 
 console.log(pokemonRepository.getAll());
 
 //ForEach
-pokemonRepository.getAll().forEach(function(item){
-  let myText = item.name + " (height:" + item.height + ")";
-  if (item.height > 5) {
-    myText += " Wow, that’s big!";
-  }
-  myText += "<br>";
-  document.write(myText);
+pokemonRepository.getAll().forEach(function (item) {
+  pokemonRepository.addListItem(item);
 });
 
-modified for IIFE immplimentation
