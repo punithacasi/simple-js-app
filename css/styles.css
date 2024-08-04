@@ -1,80 +1,89 @@
 :root {
-    --body-font-weight: 400;
-    --body-font-style: normal;
+  --body-font-weight: 400;
+  --body-font-style: normal;
 
-    --h1-Color: #03032d;
-    --h-font-weight: 700;
-    --h1-font-size: 22px;
+  --h1-Color: #03032d;
+  --h-font-weight: 700;
+  --h1-font-size: 22px;
 
-    --header-background-color: #EF5350;
+  --header-background-color: #EF5350;
 
 
 }
 
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: var(--body-font-weight);
-    font-style: var(--body-font-style);
-    line-height: 1.6;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--body-font-weight);
+  font-style: var(--body-font-style);
+  line-height: 1.6;
 
 }
 
 h1 {
-    font-size: var(--h1-font-size);
-    font-weight: var(--h-font-weight);
-    color: var(--h1-Color);
+  font-size: var(--h1-font-size);
+  font-weight: var(--h-font-weight);
+  color: var(--h1-Color);
 }
 
 header {
-    background-color: var(--header-background-color);
+  background-color: var(--header-background-color);
 }
 
 .navigation__logo img {
-    height: 50px;
+  height: 50px;
 }
 
 
 .button-class {
-    background-color: #4caf50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color:#eee;
-    color: black;
-    border: 2px solid #ddd;
-    width: 99%;
-    border-radius: 2px;
-  }
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color:#eee;
+  color: black;
+  border: 2px solid #ddd;
+  width: 99%;
+  border-radius: 2px;
+}
 
-  .button-class:hover {
-    background-color: #ccc;
-    color: black;
-    border: 2px solid #ddd;
+.button-class:hover {
+  background-color: #ccc;
+  color: black;
+  border: 2px solid #ddd;
 
-  }
+}
 
-  .container{
-    border: solid 1px;
-    margin-top: 5px;
-    padding: 5px;
-    width: 30%;
-  }
+.container{
+  margin: 0;
+  border: solid 1px;
+  margin-top: 5px;
+  padding: 5px; 
+}
 
-  ul{
-    padding: 0px;
-    
-  }
+.pokemon-list{
 
-  li {
-    list-style-type: none;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+}
+
+ul{
+  padding: 0px;
+  
+}
+
+li {
+  list-style-type: none;
+}
+
