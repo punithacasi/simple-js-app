@@ -35,3 +35,46 @@ header {
     height: 50px;
 }
 
+
+.button-class {
+    background-color: #4caf50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color:#eee;
+    color: black;
+    border: 2px solid #ddd;
+    width: 99%;
+    border-radius: 2px;
+  }
+
+  .button-class:hover {
+    background-color: #ccc;
+    color: black;
+    border: 2px solid #ddd;
+
+  }
+
+  .container{
+    border: solid 1px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 30%;
+  }
+
+  ul{
+    padding: 0px;
+    
+  }
+
+  li {
+    list-style-type: none;
+  }
